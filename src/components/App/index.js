@@ -1,8 +1,13 @@
 import React from "react";
-import "./index.css";
+import { AppElement } from "./index.style";
+import Wrapper from "../Wrapper";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <AppElement>
+      <Wrapper />
+    </AppElement>
+  );
 }
 
 export default App;
