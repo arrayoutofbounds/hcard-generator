@@ -31,6 +31,13 @@ export const DetailsRow = styled.div`
 
   ${helpers.respondTo.sm`
     flex-direction: column;
+
+    > * {
+      &:not(:first-child) {
+        margin-left: 0px;
+        margin-top: 10px;
+      }
+    }
   `}
 `;
 
@@ -44,4 +51,15 @@ export const Action = styled.div`
       margin-left: 15px;
     }
   }
+
+  ${helpers.respondTo.sm`
+    flex-direction: column;
+
+    > * {
+      &:not(:first-child) {
+        margin-left: 0px;
+        margin-top: 15px;
+      }
+    }
+  `}
 `;
