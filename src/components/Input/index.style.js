@@ -4,7 +4,7 @@ export const InputWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 15px;
+  margin-top: 10px;
   > Label {
     text-align: left;
   }
@@ -15,4 +15,5 @@ export const InputElement = styled.input`
   font-size: 14px;
   padding: 10px;
   width: 100%;
+  box-sizing: border-box;
 `;

@@ -1,12 +1,9 @@
 import React from "react";
-import {
-  DetailsFormWrapper,
-  TitleRow,
-  PersonalDetailsRow,
-} from "./index.style";
+import { DetailsFormWrapper, TitleRow, DetailsRow } from "./index.style";
 import Form from "../../components/Form";
 import Title from "../../components/Title";
 import Input from "../../components/Input";
+import Section from "../../components/Section";
 
 export default function DetailsForm(props) {
   function onSubmit(event) {
@@ -27,14 +24,22 @@ export default function DetailsForm(props) {
           </Title>
         </TitleRow>
 
-        <PersonalDetailsRow>
-          <Input
-            type="text"
-            label="GIVEN NAME"
-            name="givenName"
-            onChange={fieldChange}
-          />
-        </PersonalDetailsRow>
+        <Section name="Personal Details">
+          <DetailsRow>
+            <Input
+              type="text"
+              label="GIVEN NAME"
+              name="givenName"
+              onChange={fieldChange}
+            />
+            <Input
+              type="text"
+              label="SURNAME"
+              name="givenName"
+              onChange={fieldChange}
+            />
+          </DetailsRow>
+        </Section>
       </Form>
     </DetailsFormWrapper>
   );
