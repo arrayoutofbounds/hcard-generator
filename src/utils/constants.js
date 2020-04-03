@@ -8,3 +8,5 @@ export const breakpoints = {
   md: "992px",
   lg: "1200px",
 };
+export const secondayButtonColour = "#627b8b";
+export const primaryButtonColor = "#3498db";

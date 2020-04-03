@@ -1,11 +1,14 @@
 import styled from "styled-components";
 import { constants, helpers } from "../../utils";
-import Input from "../../components/Input";
 
 export const DetailsFormWrapper = styled.div`
   background-color: ${constants.whiteColour};
   height: 100%;
   width: 100%;
+
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
 `;
 
 export const TitleRow = styled.div`
@@ -17,7 +20,7 @@ export const DetailsRow = styled.div`
   flex-direction: row;
 
   &:first-of-type {
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   > * {
@@ -29,4 +32,16 @@ export const DetailsRow = styled.div`
   ${helpers.respondTo.sm`
     flex-direction: column;
   `}
+`;
+
+export const Action = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-top: 35px;
+
+  > * {
+    &:not(:first-child) {
+      margin-left: 15px;
+    }
+  }
 `;
