@@ -118,7 +118,7 @@ export default function DetailsForm(props) {
             onClick={triggerFileUpload}
             text="Upload Avatar"
           />
-          <Button styleClass="primary" type="submit" text="Create HCard" />
+          <Button styleClass="primary" type="submit" text="Create hCard" />
         </Action>
       </Form>
     </DetailsFormWrapper>

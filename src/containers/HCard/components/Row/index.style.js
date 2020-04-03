@@ -3,12 +3,13 @@ import { constants } from "../../../../utils";
 
 export const RowWrapper = styled.div`
   border-bottom: 1px solid ${constants.grayColour};
-  margin-top: 20px;
+  margin-top: 15px;
   padding-bottom: 5px;
   display: flex;
+  width: 100%;
 `;
 
-export const RowLabel = styled.label`
+export const RowLabel = styled.span`
   text-align: left;
   color: ${constants.darkBlueColour};
   display: inline-block;

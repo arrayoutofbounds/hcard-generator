@@ -7,7 +7,6 @@ export const WrapperElement = styled.div`
   align-items: center;
   flex-direction: row;
   background-color: ${lightGrayColour};
-  height: 100vh;
   flex: 1;
 
   ${helpers.respondTo.sm`

@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Row from "./components/Row";
 import Avatar from "./components/Avatar";
 import Body from "./components/Body";
+import Address from "./components/Address";
 
 import EmailLink from "../../components/EmailLink";
 
@@ -44,6 +45,15 @@ export default function HCard(props) {
         <Row label="Phone">
           <span className="tel">{phone}</span>
         </Row>
+
+        <Address
+          country={country}
+          street={street}
+          suburb={suburb}
+          state={state}
+          houseName={houseName}
+          postcode={postcode}
+        />
       </Body>
     </HCardWrapper>
   );
