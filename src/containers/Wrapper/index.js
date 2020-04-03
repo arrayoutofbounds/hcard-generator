@@ -22,8 +22,8 @@ export default function Wrapper(props) {
 
   return (
     <WrapperElement>
-      <DetailsForm />
-      <HCard />
+      <DetailsForm handleFieldChange={handleFieldChange} />
+      <HCard fields={fields} />
     </WrapperElement>
   );
 }
