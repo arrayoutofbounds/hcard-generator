@@ -30,8 +30,7 @@ export default function HCard(props) {
       <Header>
         <Row>
           <span className="fn">
-            {" "}
-            {givenName} {surname}{" "}
+            {givenName} {surname}
           </span>
         </Row>
         <Avatar source={avatar} />

@@ -3,7 +3,7 @@ import { helpers } from "../../utils";
 
 export const HCardWrapper = styled.div`
   width: 100%;
-  margin-left: 25px;
+  margin-left: 45px;
   margin-right: 25px;
   background: white;
 

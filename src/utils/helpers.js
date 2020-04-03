@@ -1,4 +1,5 @@
 import { css } from "styled-components";
+import { useState } from "react";
 import { breakpoints } from "./constants";
 
 export const respondTo = Object.keys(breakpoints).reduce(
@@ -13,9 +14,7 @@ export const respondTo = Object.keys(breakpoints).reduce(
   {}
 );
 
-import { useState } from "react";
-
-export function useFormFields(initialState) {
+export const useFormFields = (initialState) => {
   const [fields, setValues] = useState(initialState);
 
   return [
@@ -27,4 +26,4 @@ export function useFormFields(initialState) {
       });
     },
   ];
-}
+};

@@ -16,11 +16,6 @@ export default function DetailsForm(props) {
     event.preventDefault();
   }
 
-  function fieldChange({ target }) {
-    const { id, value } = target;
-    console.log(id, value);
-  }
-
   function triggerFileUpload() {}
 
   return (
@@ -38,13 +33,13 @@ export default function DetailsForm(props) {
               type="text"
               label="GIVEN NAME"
               name="givenName"
-              onChange={fieldChange}
+              onChange={props.handleFieldChange}
             />
             <Input
               type="text"
               label="SURNAME"
               name="surname"
-              onChange={fieldChange}
+              onChange={props.handleFieldChange}
             />
           </DetailsRow>
 
@@ -53,13 +48,13 @@ export default function DetailsForm(props) {
               type="email"
               label="EMAIL"
               name="email"
-              onChange={fieldChange}
+              onChange={props.handleFieldChange}
             />
             <Input
               type="number"
               label="PHONE"
               name="phone"
-              onChange={fieldChange}
+              onChange={props.handleFieldChange}
             />
           </DetailsRow>
         </Section>
@@ -70,13 +65,13 @@ export default function DetailsForm(props) {
               type="text"
               label="HOUSE NAME OR #"
               name="houseName"
-              onChange={fieldChange}
+              onChange={props.handleFieldChange}
             />
             <Input
               type="text"
               label="STREET"
               name="street"
-              onChange={fieldChange}
+              onChange={props.handleFieldChange}
             />
           </DetailsRow>
 
@@ -85,13 +80,13 @@ export default function DetailsForm(props) {
               type="text"
               label="SUBURB"
               name="suburb"
-              onChange={fieldChange}
+              onChange={props.handleFieldChange}
             />
             <Input
               type="text"
               label="STATE"
               name="state"
-              onChange={fieldChange}
+              onChange={props.handleFieldChange}
             />
           </DetailsRow>
 
@@ -100,13 +95,13 @@ export default function DetailsForm(props) {
               type="text"
               label="POSTCODE"
               name="postcode"
-              onChange={fieldChange}
+              onChange={props.handleFieldChange}
             />
             <Input
               type="text"
               label="COUNTRY"
               name="country"
-              onChange={fieldChange}
+              onChange={props.handleFieldChange}
             />
           </DetailsRow>
         </Section>

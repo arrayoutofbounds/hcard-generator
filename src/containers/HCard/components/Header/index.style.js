@@ -11,6 +11,8 @@ export const HeaderWrapper = styled.div`
 
   > ${RowWrapper} {
     border-bottom: 0px;
+    margin-top: 0;
+    min-height: 30px;
   }
 
   span {
