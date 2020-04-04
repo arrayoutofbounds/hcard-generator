@@ -13,8 +13,6 @@ import Button from "../../components/Button";
 
 import PropTypes from "prop-types";
 
-import fileDownloader from "js-file-download";
-
 export default function DetailsForm(props) {
   const inputFile = useRef();
 
