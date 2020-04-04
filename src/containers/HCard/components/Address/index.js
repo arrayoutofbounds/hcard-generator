@@ -17,7 +17,7 @@ export default function Address(props) {
   const { country, street, suburb, state, houseName, postcode } = props;
   return (
     <AddressWrapper className="adr">
-      <StreetLocalityRegionWrapper>
+      <StreetLocalityRegionWrapper className="locality-region-wrapper">
         <Row label="Address">
           <Street className="street-address">
             {houseName} {street}
@@ -31,7 +31,7 @@ export default function Address(props) {
         </Row>
       </StreetLocalityRegionWrapper>
 
-      <CodeAndCountryWrapper>
+      <CodeAndCountryWrapper className="country-code-wrapper">
         <Row label="Postcode">
           <PostCode className="postal-code">{postcode}</PostCode>
         </Row>
