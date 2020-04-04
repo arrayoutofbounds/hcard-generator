@@ -27,3 +27,8 @@ export const useFormFields = (initialState) => {
     },
   ];
 };
+
+export const hCardConverter = (element) => {
+  const hCard = new XMLSerializer().serializeToString(element);
+  window.open("data:application/octet-stream;base64," + btoa(hCard));
+};

@@ -10,6 +10,7 @@ import Title from "../../components/Title";
 import Input from "../../components/Input";
 import Section from "../../components/Section";
 import Button from "../../components/Button";
+import { helpers } from "../../utils";
 
 import PropTypes from "prop-types";
 
@@ -25,15 +26,10 @@ export default function DetailsForm(props) {
     props.setAvatar(imageSource);
   }
 
-  function hCardConverter(element) {
-    const hCard = new XMLSerializer().serializeToString(element);
-    window.open("data:application/octet-stream;base64," + btoa(hCard));
-  }
-
   function onSubmit(event) {
     event.preventDefault();
 
-    hCardConverter(document.getElementById("vcard"));
+    helpers.hCardConverter(document.getElementById("vcard"));
   }
 
   function onButtonClick(event) {
