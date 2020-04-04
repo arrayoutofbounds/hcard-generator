@@ -9,38 +9,38 @@ hCard is a simple, open format for publishing people, companies, organizations o
    <div class="sc-fzqNJr hXQgjp hcard-header">
       <div class="sc-fznZeY gJlwEu">
          <span class="sc-fzokOt jBUges row-label"></span>
-         <div class="sc-fzqBZW eNQuho row-body"><span class="fn">Anmol Desai</span></div>
+         <div class="sc-fzqBZW eNQuho row-body"><span class="fn">Test user</span></div>
       </div>
       <div class="sc-fzoyAV fQsatj avatar-wrapper"><img src="/static/media/avatar.ccfd6694.png" alt="avatar" class="sc-fzoLag BNtsP photo" /></div>
    </div>
    <div class="sc-fzoXzr jYxGEJ hcard-body">
       <div class="sc-fznZeY gJlwEu">
          <span class="sc-fzokOt gcdrkW row-label">Email</span>
-         <div class="sc-fzqBZW eNQuho row-body"><a class="sc-fzoNJl loPePV email" href="mailto: anmoldesai4@gmail.com">anmoldesai4@gmail.com</a></div>
+         <div class="sc-fzqBZW eNQuho row-body"><a class="sc-fzoNJl loPePV email" href="mailto: test@mail.com">test@mail.com</a></div>
       </div>
       <div class="sc-fznZeY gJlwEu">
          <span class="sc-fzokOt gcdrkW row-label">Phone</span>
-         <div class="sc-fzqBZW eNQuho row-body"><span class="tel">0451044429</span></div>
+         <div class="sc-fzqBZW eNQuho row-body"><span class="tel">01451033312</span></div>
       </div>
       <div class="sc-fzpjYC gJohPa adr">
          <div class="sc-fznJRM bTIjTR locality-region-wrapper">
             <div class="sc-fznZeY gJlwEu">
                <span class="sc-fzokOt gcdrkW row-label">Address</span>
-               <div class="sc-fzqBZW eNQuho row-body"><span class="sc-fzqARJ eLpUJW street-address">31 carinya st, blacktown 204</span></div>
+               <div class="sc-fzqBZW eNQuho row-body"><span class="sc-fzqARJ eLpUJW street-address">1 magical ave</span></div>
             </div>
             <div class="sc-fznZeY gJlwEu">
                <span class="sc-fzokOt jBUges row-label"></span>
-               <div class="sc-fzqBZW eNQuho row-body"><span class="sc-fzqNqU kikdAh locality">Sydney</span>, <span class="sc-fzoyTs jZUSDr region">New South Wales</span></div>
+               <div class="sc-fzqBZW eNQuho row-body"><span class="sc-fzqNqU kikdAh locality">narnia</span>, <span class="sc-fzoyTs jZUSDr region">hogwarts</span></div>
             </div>
          </div>
          <div class="sc-fznxsB cUWXFh country-code-wrapper">
             <div class="sc-fznZeY gJlwEu">
                <span class="sc-fzokOt gcdrkW row-label">Postcode</span>
-               <div class="sc-fzqBZW eNQuho row-body"><span class="sc-fznWqX dAkvW postal-code">2148</span></div>
+               <div class="sc-fzqBZW eNQuho row-body"><span class="sc-fznWqX dAkvW postal-code">1800</span></div>
             </div>
             <div class="sc-fznZeY gJlwEu">
                <span class="sc-fzokOt gcdrkW row-label">Country</span>
-               <div class="sc-fzqBZW eNQuho row-body"><span class="sc-fzoiQi ozSmQ country-name">Australia</span></div>
+               <div class="sc-fzqBZW eNQuho row-body"><span class="sc-fzoiQi ozSmQ country-name">Greenland</span></div>
             </div>
          </div>
       </div>
