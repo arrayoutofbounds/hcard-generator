@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { HCardWrapper } from "./index.style";
+import { HCardWrapper, Preview } from "./index.style";
 import Header from "./components/Header";
 import Row from "./components/Row";
 import Avatar from "./components/Avatar";
@@ -27,6 +27,7 @@ export default function HCard(props) {
 
   return (
     <HCardWrapper id="vcard" className="vcard">
+      <Preview>HCARD PREVIEW</Preview>
       <Header>
         <Row>
           <span className="fn">

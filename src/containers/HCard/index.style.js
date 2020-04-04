@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { helpers } from "../../utils";
+import { helpers, constants } from "../../utils";
 
 export const HCardWrapper = styled.div`
   width: 100%;
@@ -10,4 +10,13 @@ export const HCardWrapper = styled.div`
   ${helpers.respondTo.sm`
     margin: 0 auto;
   `}
+`;
+
+export const Preview = styled.div`
+  background-color: ${constants.lightGrayColour};
+  text-align: right;
+  width: 100%;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: ${constants.grayColour};
 `;
