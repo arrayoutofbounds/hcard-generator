@@ -7,8 +7,6 @@ import defaultAvatar from "../../../../assets/images/avatar.png";
 
 export default function Avatar(props) {
   const { imageSource } = props;
-  console.log(imageSource);
-  console.log(typeof imageSource);
   return (
     <AvatarWrapper className="avatar-wrapper">
       <ImageWrapper

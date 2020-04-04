@@ -11,16 +11,23 @@ import Input from "../../components/Input";
 import Section from "../../components/Section";
 import Button from "../../components/Button";
 
+import PropTypes from "prop-types";
+
 export default function DetailsForm(props) {
-  const inputFile = useRef(null);
+  const inputFile = useRef();
 
   function onSubmit(event) {
     event.preventDefault();
-    inputFile.current.click();
+
+    const file = event.target.files[0];
+    const imageSource = window.URL.createObjectURL(file);
+
+    props.setAvatar(imageSource);
   }
 
-  function onAvatarUpload(event) {
+  function onButtonClick(event) {
     event.preventDefault();
+    inputFile.current.click();
   }
 
   return (
@@ -115,7 +122,7 @@ export default function DetailsForm(props) {
           <Button
             styleClass="secondary"
             type="button"
-            onClick={onAvatarUpload}
+            onClick={onButtonClick}
             text="Upload Avatar"
           />
           <Button styleClass="primary" type="submit" text="Create hCard" />
@@ -128,9 +135,14 @@ export default function DetailsForm(props) {
           name="avatar"
           type="file"
           accept="image/x-png,image/gif,image/jpeg"
-          onChange={onAvatarUpload}
+          onChange={onSubmit}
         />
       </Form>
     </DetailsFormWrapper>
   );
 }
+
+DetailsForm.propTypes = {
+  setAvatar: PropTypes.func.isRequired,
+  handleFieldChange: PropTypes.func.isRequired,
+};

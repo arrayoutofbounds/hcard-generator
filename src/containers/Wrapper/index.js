@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { WrapperElement } from "./index.style";
 import DetailsForm from "../DetailsForm";
 import HCard from "../HCard";
@@ -16,12 +16,16 @@ export default function Wrapper(props) {
     state: "",
     postcode: "",
     country: "",
-    avatar: "",
   });
+
+  const [avatar, setAvatar] = useState("");
 
   return (
     <WrapperElement>
-      <DetailsForm handleFieldChange={handleFieldChange} />
+      <DetailsForm
+        handleFieldChange={handleFieldChange}
+        setAvatar={setAvatar}
+      />
       <HCard
         givenName={fields.givenName}
         surname={fields.surname}
@@ -33,7 +37,7 @@ export default function Wrapper(props) {
         state={fields.state}
         postcode={fields.postcode}
         country={fields.country}
-        avatar={fields.avatar}
+        avatar={avatar}
       />
     </WrapperElement>
   );
