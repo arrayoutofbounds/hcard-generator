@@ -12,6 +12,7 @@ export default function Avatar(props) {
       <ImageWrapper
         src={imageSource ? imageSource : defaultAvatar}
         alt="avatar"
+        className="photo"
       />
     </AvatarWrapper>
   );

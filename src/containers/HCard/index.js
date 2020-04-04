@@ -26,7 +26,7 @@ export default function HCard(props) {
   } = props;
 
   return (
-    <HCardWrapper className="vcard">
+    <HCardWrapper id="vcard" className="vcard">
       <Header>
         <Row>
           <span className="fn">

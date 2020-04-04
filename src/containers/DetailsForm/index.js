@@ -13,16 +13,29 @@ import Button from "../../components/Button";
 
 import PropTypes from "prop-types";
 
+import fileDownloader from "js-file-download";
+
 export default function DetailsForm(props) {
   const inputFile = useRef();
 
-  function onSubmit(event) {
+  function onAvatarSubmit(event) {
     event.preventDefault();
 
     const file = event.target.files[0];
     const imageSource = window.URL.createObjectURL(file);
 
     props.setAvatar(imageSource);
+  }
+
+  function hCardConverter(element) {
+    const hCard = new XMLSerializer().serializeToString(element);
+    window.open("data:application/octet-stream;base64," + btoa(hCard));
+  }
+
+  function onSubmit(event) {
+    event.preventDefault();
+
+    hCardConverter(document.getElementById("vcard"));
   }
 
   function onButtonClick(event) {
@@ -125,7 +138,12 @@ export default function DetailsForm(props) {
             onClick={onButtonClick}
             text="Upload Avatar"
           />
-          <Button styleClass="primary" type="submit" text="Create hCard" />
+          <Button
+            onClick={onSubmit}
+            styleClass="primary"
+            type="submit"
+            text="Create hCard"
+          />
         </Action>
 
         <input
@@ -135,7 +153,7 @@ export default function DetailsForm(props) {
           name="avatar"
           type="file"
           accept="image/x-png,image/gif,image/jpeg"
-          onChange={onSubmit}
+          onChange={onAvatarSubmit}
         />
       </Form>
     </DetailsFormWrapper>
