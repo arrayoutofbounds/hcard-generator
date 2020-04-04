@@ -125,9 +125,9 @@ Unit tests were created using Enzyme and run using jest.
 
 Coverage was found by running `yarn test --coverage --watchAll=false`
 
-![Test Results](https://github.com/arrayoutofbounds/hcard-generator/tree/master/src/assets/images/test-results.png)
+![Test Results](/src/assets/images/test-results.png)
 
-![Information](https://github.com/arrayoutofbounds/hcard-generator/tree/master/src/assets/images/tests-time-info.png)
+![Information](/src/assets/images/tests-time-info.png)
 
 
 ## Colour Picker
