@@ -4,7 +4,7 @@ import { LabelWrapper } from "./index.style";
 
 export default function Label(props) {
   const { forField, value } = props;
-  return <LabelWrapper htmlFor={forField}> {value} </LabelWrapper>;
+  return <LabelWrapper htmlFor={forField}>{value}</LabelWrapper>;
 }
 
 Label.propTypes = {
