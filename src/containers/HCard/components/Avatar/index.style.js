@@ -8,6 +8,6 @@ export const AvatarWrapper = styled.div`
 `;
 
 export const ImageWrapper = styled.img`
-  height: 105px;
-  width: 85px;
+  height: 100px;
+  width: 80px;
 `;

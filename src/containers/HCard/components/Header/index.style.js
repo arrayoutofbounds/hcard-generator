@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { constants } from "../../../../utils";
-import { RowWrapper, RowBody } from "../Row/index.style";
+import { RowWrapper } from "../Row/index.style";
 
 export const HeaderWrapper = styled.div`
   background: ${constants.darkBlueColour};

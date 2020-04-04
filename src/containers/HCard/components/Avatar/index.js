@@ -3,15 +3,22 @@ import PropTypes from "prop-types";
 
 import { AvatarWrapper, ImageWrapper } from "./index.style";
 
+import defaultAvatar from "../../../../assets/images/avatar.png";
+
 export default function Avatar(props) {
-  const { source } = props;
+  const { imageSource } = props;
+  console.log(imageSource);
+  console.log(typeof imageSource);
   return (
     <AvatarWrapper className="avatar-wrapper">
-      <ImageWrapper src={source} alt="avatar" />
+      <ImageWrapper
+        src={imageSource ? imageSource : defaultAvatar}
+        alt="avatar"
+      />
     </AvatarWrapper>
   );
 }
 
 Avatar.propTypes = {
-  source: PropTypes.string,
+  imageSource: PropTypes.string,
 };

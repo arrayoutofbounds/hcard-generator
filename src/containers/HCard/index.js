@@ -33,7 +33,7 @@ export default function HCard(props) {
             {givenName} {surname}
           </span>
         </Row>
-        <Avatar source={avatar} />
+        <Avatar imageSource={avatar} />
       </Header>
 
       <Body>
@@ -66,7 +66,7 @@ HCard.propTypes = {
   avatar: PropTypes.string,
   givenName: PropTypes.string,
   email: PropTypes.string,
-  phone: PropTypes.number,
+  phone: PropTypes.string,
   surname: PropTypes.string,
   houseName: PropTypes.string,
   street: PropTypes.string,

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   DetailsFormWrapper,
   TitleRow,
@@ -12,11 +12,16 @@ import Section from "../../components/Section";
 import Button from "../../components/Button";
 
 export default function DetailsForm(props) {
+  const inputFile = useRef(null);
+
   function onSubmit(event) {
     event.preventDefault();
+    inputFile.current.click();
   }
 
-  function triggerFileUpload() {}
+  function onAvatarUpload(event) {
+    event.preventDefault();
+  }
 
   return (
     <DetailsFormWrapper>
@@ -110,11 +115,21 @@ export default function DetailsForm(props) {
           <Button
             styleClass="secondary"
             type="button"
-            onClick={triggerFileUpload}
+            onClick={onAvatarUpload}
             text="Upload Avatar"
           />
           <Button styleClass="primary" type="submit" text="Create hCard" />
         </Action>
+
+        <input
+          style={{ display: "none" }}
+          ref={inputFile}
+          id="avatar"
+          name="avatar"
+          type="file"
+          accept="image/x-png,image/gif,image/jpeg"
+          onChange={onAvatarUpload}
+        />
       </Form>
     </DetailsFormWrapper>
   );
