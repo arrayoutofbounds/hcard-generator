@@ -1,0 +1,16 @@
+# need super user access
+sudo: required 
+# need services before commencing steps
+services:
+  - docker
+
+# steps that run before tests or deployment is done
+before_install:
+  - docker build -t anmoldesai/hcard -f Dockerfile.dev .
+
+# all commands to be executed. travis ci  watched the output
+# if return code other than 0, then travis considers it failed
+# default behaviour of yarn test is to run it and then put a watcher.
+# travis ci expects test to end and exit successfully to be considered a pass.
+script:
+  - docker run -e CI=true anmoldesai/hcard yarn run test
