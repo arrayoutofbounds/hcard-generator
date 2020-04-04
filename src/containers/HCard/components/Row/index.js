@@ -8,9 +8,11 @@ export default function Row(props) {
   const hide = label ? false : true;
   return (
     <RowWrapper>
-      <RowLabel hide={hide}>{label}</RowLabel>
+      <RowLabel className="row-label" hide={hide}>
+        {label}
+      </RowLabel>
 
-      <RowBody>{children}</RowBody>
+      <RowBody className="row-body">{children}</RowBody>
     </RowWrapper>
   );
 }
