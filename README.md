@@ -119,6 +119,27 @@ HCard container has a set of components within it. This decisions was made to en
 - index.test.js ( Cotains all tests related to the item mention in index.js)
 
 
+## Tests
+
+Unit tests were created using Enzyme and run using jest.
+
+Coverage was found by running `yarn test --coverage --watchAll=false`
+
+![Test Results](https://github.com/arrayoutofbounds/hcard-generator/tree/master/src/assets/images/test-results.png)
+
+![Information](https://github.com/arrayoutofbounds/hcard-generator/tree/master/src/assets/images/tests-time-info.png)
+
+
 ## Colour Picker
 
 Due to not having photoshop the colour was picked by uploading the png given to https://imagecolorpicker.com/en/ and retrieving the colour.
+
+## Testing the result
+
+Note: For the test to pass all fields must be filled out.
+
+## To Do
+
+- Improve styled-components to show more readable class names.
+- Add integration tests
+- Allow removal of fields in the final generated result when no value is entered.
