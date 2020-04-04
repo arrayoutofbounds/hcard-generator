@@ -1,12 +1,12 @@
 import React from "react";
-import { mount } from "enzyme";
+import { shallow } from "enzyme";
 import Header from ".";
 
 describe("Header", () => {
   let wrapper;
 
   it("should render children", () => {
-    wrapper = mount(
+    wrapper = shallow(
       <Header>
         <div>child</div>
       </Header>

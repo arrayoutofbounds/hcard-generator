@@ -1,11 +1,11 @@
 import React from "react";
-import { mount } from "enzyme";
+import { shallow } from "enzyme";
 import Wrapper from ".";
 
 describe("Wrapper", () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = mount(<Wrapper />);
+    wrapper = shallow(<Wrapper />);
   });
 
   it("should render form and hcard", () => {

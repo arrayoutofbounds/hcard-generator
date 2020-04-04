@@ -1,11 +1,11 @@
 import React from "react";
-import { mount } from "enzyme";
+import { shallow } from "enzyme";
 import HCard from ".";
 
 describe("HCard", () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = mount(
+    wrapper = shallow(
       <HCard
         givenName="givenName"
         surname="surname"
