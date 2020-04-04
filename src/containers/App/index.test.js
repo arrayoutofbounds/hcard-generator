@@ -1,7 +1,14 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { shallow } from "enzyme";
 import App from ".";
 
-test("renders learn react link", () => {
-  const { getByText } = render(<App />);
+describe("App", () => {
+  let wrapper;
+  beforeEach(() => {
+    wrapper = shallow(<App />);
+  });
+
+  it("should render without crashing", () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 });
