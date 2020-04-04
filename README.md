@@ -2,6 +2,52 @@
 
 hCard is a simple, open format for publishing people, companies, organizations on the web, using a 1:1 representation of vCard (RFC2426) properties and values in HTML. hCard is one of several open microformat standards suitable for embedding data in HTML/HTML5, and Atom/RSS/XHTML or other XML. 
 
+## Output from generator
+
+```
+<div xmlns="http://www.w3.org/1999/xhtml" id="vcard" class="sc-fznKkj fQkkzS vcard">
+   <div class="sc-fzqNJr hXQgjp hcard-header">
+      <div class="sc-fznZeY gJlwEu">
+         <span class="sc-fzokOt jBUges row-label"></span>
+         <div class="sc-fzqBZW eNQuho row-body"><span class="fn">Anmol Desai</span></div>
+      </div>
+      <div class="sc-fzoyAV fQsatj avatar-wrapper"><img src="/static/media/avatar.ccfd6694.png" alt="avatar" class="sc-fzoLag BNtsP photo" /></div>
+   </div>
+   <div class="sc-fzoXzr jYxGEJ hcard-body">
+      <div class="sc-fznZeY gJlwEu">
+         <span class="sc-fzokOt gcdrkW row-label">Email</span>
+         <div class="sc-fzqBZW eNQuho row-body"><a class="sc-fzoNJl loPePV email" href="mailto: anmoldesai4@gmail.com">anmoldesai4@gmail.com</a></div>
+      </div>
+      <div class="sc-fznZeY gJlwEu">
+         <span class="sc-fzokOt gcdrkW row-label">Phone</span>
+         <div class="sc-fzqBZW eNQuho row-body"><span class="tel">0451044429</span></div>
+      </div>
+      <div class="sc-fzpjYC gJohPa adr">
+         <div class="sc-fznJRM bTIjTR locality-region-wrapper">
+            <div class="sc-fznZeY gJlwEu">
+               <span class="sc-fzokOt gcdrkW row-label">Address</span>
+               <div class="sc-fzqBZW eNQuho row-body"><span class="sc-fzqARJ eLpUJW street-address">31 carinya st, blacktown 204</span></div>
+            </div>
+            <div class="sc-fznZeY gJlwEu">
+               <span class="sc-fzokOt jBUges row-label"></span>
+               <div class="sc-fzqBZW eNQuho row-body"><span class="sc-fzqNqU kikdAh locality">Sydney</span>, <span class="sc-fzoyTs jZUSDr region">New South Wales</span></div>
+            </div>
+         </div>
+         <div class="sc-fznxsB cUWXFh country-code-wrapper">
+            <div class="sc-fznZeY gJlwEu">
+               <span class="sc-fzokOt gcdrkW row-label">Postcode</span>
+               <div class="sc-fzqBZW eNQuho row-body"><span class="sc-fznWqX dAkvW postal-code">2148</span></div>
+            </div>
+            <div class="sc-fznZeY gJlwEu">
+               <span class="sc-fzokOt gcdrkW row-label">Country</span>
+               <div class="sc-fzqBZW eNQuho row-body"><span class="sc-fzoiQi ozSmQ country-name">Australia</span></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+```
+
 ## Aim
 
 The aim of this project was to allow a user to enter their details in the form on the left and have the hcard preview shown on the right.
@@ -71,7 +117,6 @@ HCard container has a set of components within it. This decisions was made to en
 - index.js ( Contains all logic required for the component or feature)
 - index.style.js ( Contains all css in js components that are used)
 - index.test.js ( Cotains all tests related to the item mention in index.js)
-
 
 
 ## Colour Picker
