@@ -2,6 +2,10 @@
 
 hCard is a simple, open format for publishing people, companies, organizations on the web, using a 1:1 representation of vCard (RFC2426) properties and values in HTML. hCard is one of several open microformat standards suitable for embedding data in HTML/HTML5, and Atom/RSS/XHTML or other XML. 
 
+## Aim
+
+The aim of this project was to allow a user to enter their details in the form on the left and have the hcard preview shown on the right.
+
 ## Output from generator
 
 ```
@@ -47,10 +51,6 @@ hCard is a simple, open format for publishing people, companies, organizations o
    </div>
 </div>
 ```
-
-## Aim
-
-The aim of this project was to allow a user to enter their details in the form on the left and have the hcard preview shown on the right.
 
 ## Technology
 
