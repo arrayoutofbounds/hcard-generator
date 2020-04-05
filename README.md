@@ -202,7 +202,6 @@ Improved SEO via HTML:
 - Ensure there is a title tag
 - Ensure there is a meta description tag
 - Add alt to any img tags
-- 
 
 ## To Do
 
