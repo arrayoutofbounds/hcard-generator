@@ -17,11 +17,21 @@ Click [here](http://hcard-env.eba-4urj4zfb.ap-southeast-2.elasticbeanstalk.com/)
 
 The aim of this project was to build a responsive HCard Generator that allows a user to enter their details in the form on the left and have the HCard preview shown on the right.
 
+## Testing the result
+
+To ensure the hcard was following conventions, the output of the download was tested on http://hcard.geekhood.net by pasting it under the `Fragment` section. This is the validator that is recommended by http://microformats.org/wiki/hCard.
+
+Note: For the test to pass all fields must be filled out. This is something that can be improved.
+
 ## Output from generator
 
 The class vcard is a root class name that indicates the presence of an HCard. 
 
 The classes photo, fn, and adr define properties of the HCard. 
+
+### Converting to XHTML
+
+Since HCard is based of XHTML, it has to be converted to pass the validator tests. This was done by creating a helper function that serializes to XML. If this is not done then the validator will fail.
 
 ```
 <div xmlns="http://www.w3.org/1999/xhtml" id="vcard" class="sc-fznKkj fQkkzS vcard">
@@ -135,7 +145,6 @@ This structure was chosen to ensure that all related files stay in close proximi
 - index.style.js ( Contains all css in js components that are used in index.js)
 - index.test.js ( Contains all tests related to the component mention in index.js)
 
-
 ## Tests
 
 Unit tests were created using Enzyme and run using jest.
@@ -163,16 +172,14 @@ Styled components also ensured that the code was highly reusable and adaptable t
 
 A utils folder was created to allow independent code to be accessed easily. Constants and helpers are accessible by the entire application and affect it greatly. To ensure that changes only need to be made in one place, all utility functions and constants were put in the utils folder.
 
+## Responsive
+
+The app is made to be responsive. It adjusts according to the given screen size. This was done by creating a helper called `respondTo`. This helper allows css rules to be added when the screen size is at 768px or less. The breakpoints for this function are set as constants. This helper function can have more logic added to it to accomodate changes at each breakpoint if necessary.
 
 ## Colour Picker
 
 Due to not having photoshop the colour was picked by uploading the png given to https://imagecolorpicker.com/en/ and retrieving the colour.
 
-## Testing the result
-
-To ensure the hcard was following conventions, the output of the download was tested on http://hcard.geekhood.net by pasting it under the `Fragment` section.
-
-Note: For the test to pass all fields must be filled out. This is something that can be improved.
 
 ## CI
 
@@ -181,6 +188,12 @@ To ensure continous integration, Github was used.
 ## CD
 
 Continous Deployment was setup by using Travis CI and ElasticBeanstalk. Every time the code was pushed, tests were ran and a docker image was built. The docker image is then pushed to dockerhub and then downloaded by the Elasticbeanstalk instance and executed.
+
+## SEO
+
+Pre-rendering your React application is useful if you want to increase SEO performance of your website and make it visible to search engines. Most of the search engine robots does not execute client side javascript code and that makes websites which are made by React is not visible on search engine results.
+
+To improve SEO, the app is using react-snap. It pre renderes the app to improve SEO.
 
 ## To Do
 
