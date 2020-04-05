@@ -195,6 +195,13 @@ Pre-rendering your React application is useful if you want to increase SEO perfo
 
 To improve SEO, the app is using react-snap. It pre renderes the app to improve SEO.
 
+Improved SEO via HTML:
+
+- Ensure there is a title tag
+- Ensure there is a meta description tag
+- Add alt to any img tags
+- 
+
 ## To Do
 
 - Improve styled-components to show more readable class names.
