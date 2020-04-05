@@ -193,9 +193,19 @@ Travis builds can be seen [here](https://travis-ci.org/github/arrayoutofbounds/h
 
 ## SEO
 
-Pre-rendering your React application is useful if you want to increase SEO performance of your website and make it visible to search engines. Most of the search engine robots does not execute client side javascript code and that makes websites which are made by React is not visible on search engine results.
+There are a few ways to make a SPA more search optimised:
+- SSR
+- pre rending
 
-To improve SEO, the app is using react-snap. It pre renderes the app to improve SEO.
+However, both ways would take significant setup time and are out of scope for the given requirements.
+
+SEO can be improved by doing:
+- Adding React router
+- Adding React Helmet
+
+Since this app contains just a home page, neither would have significant improvements to the SEO results.
+
+However, SEO can be improved by making small changes in the HTML.
 
 Improved SEO via HTML:
 
