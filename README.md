@@ -187,7 +187,7 @@ To ensure continous integration, Github was used.
 
 ## CD
 
-Continous Deployment was setup by using Travis CI and ElasticBeanstalk. Every time the code was pushed, tests were ran and a docker image was built. The docker image is then pushed to dockerhub and then downloaded by the Elasticbeanstalk instance and executed.
+Continous Deployment was setup by using Travis CI and ElasticBeanstalk. Every time the code was pushed, tests were ran and a docker image was built. The docker image is then used by the Elasticbeanstalk instance and executed.
 
 Travis builds can be seen [here](https://travis-ci.org/github/arrayoutofbounds/hcard-generator).
 
