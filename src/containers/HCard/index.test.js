@@ -22,6 +22,10 @@ describe("HCard", () => {
     );
   });
 
+  it("should match snapshot", () => {
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it("should render header and body", () => {
     expect(wrapper.find("Header")).toHaveLength(1);
     expect(wrapper.find("Body")).toHaveLength(1);
