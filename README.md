@@ -189,6 +189,8 @@ To ensure continous integration, Github was used.
 
 Continous Deployment was setup by using Travis CI and ElasticBeanstalk. Every time the code was pushed, tests were ran and a docker image was built. The docker image is then pushed to dockerhub and then downloaded by the Elasticbeanstalk instance and executed.
 
+Travis builds can be seen [here](https://travis-ci.org/github/arrayoutofbounds/hcard-generator).
+
 ## SEO
 
 Pre-rendering your React application is useful if you want to increase SEO performance of your website and make it visible to search engines. Most of the search engine robots does not execute client side javascript code and that makes websites which are made by React is not visible on search engine results.
