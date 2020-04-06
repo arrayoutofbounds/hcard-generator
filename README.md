@@ -81,6 +81,11 @@ Since HCard is based of XHTML, it has to be converted to pass the validator test
 
 This app is made by using React 16.13.1
 
+Additional features added for ease of use are:
+- Prettier
+- Lint
+- Husky
+
 ## Dependencies Installed
 
 ### Enzyme
